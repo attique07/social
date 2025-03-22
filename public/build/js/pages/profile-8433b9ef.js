@@ -1,0 +1,1 @@
+import{aQ as r,bj as t,bk as o,l as a}from"../../assets/app-73d10358.js";const f=r("profile",{state:()=>({userInfo:null}),actions:{async getUserInfo(e){try{const s=await t(e);this.userInfo=s,o(this.userInfo.name)}catch{a().setErrorLayout(!0)}},setUserInfo(e){this.userInfo=e}},persist:!1});export{f as u};

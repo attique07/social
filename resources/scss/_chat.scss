@@ -1,0 +1,13 @@
+@media(min-width: 992px){
+    .chat-room-item{
+        .chat-room-options{
+            transition: opacity 0.05s ease-in;
+            opacity: 0;
+        }
+        &:hover{
+            .chat-room-options{
+                opacity: 1;
+            }
+        }
+    }
+}

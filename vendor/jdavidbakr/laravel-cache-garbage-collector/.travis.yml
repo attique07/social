@@ -1,0 +1,38 @@
+language: php
+
+os: linux
+
+cache:
+  directories:
+    - $HOME/.cache/pip
+    - $HOME/.composer/cache/files
+
+php:
+  - 7.3
+  - 8.0
+  - 8.1
+
+env:
+  - LARAVEL_VERSION=8.x-dev
+  - LARAVEL_VERSION=9.x-dev
+
+jobs:
+  exclude:
+    - php: 7.3
+      env: LARAVEL_VERSION=9.x-dev
+
+before_install:
+  - echo "memory_limit=2G" >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
+  - cp ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini ~/xdebug.ini
+  - phpenv config-rm xdebug.ini
+  - composer require "laravel/framework:${LARAVEL_VERSION}"
+
+install: travis_retry composer install --no-interaction --prefer-dist
+
+before_script: phpenv config-add ~/xdebug.ini
+
+script: vendor/bin/phpunit tests/
+
+notifications:
+  email:
+    recipients: me@jdavidbaker.com

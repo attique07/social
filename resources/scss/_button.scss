@@ -1,0 +1,90 @@
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    font-weight: 700;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: $button-corner-radius;
+    position: relative;
+    flex-shrink: 0;
+}
+.btn-block{
+    width: 100%;
+}
+.btn{
+    &-primary{
+        background-color: $primary-color; 
+        border-color: $primary-color;
+        color: #fff;
+    }
+    &-secondary{
+        background-color: #AAAAAA; 
+        border-color: #AAAAAA;
+        color: #fff;
+    }
+    &-outlined{
+        background-color: transparent; 
+        border-color: $primary-color;
+        color: $primary-color;
+    }
+    &-danger{
+        background-color: #EB5757; 
+        border-color: #EB5757;
+        color: #fff;
+    }
+    &-danger-outlined{
+        background-color: transparent; 
+        border-color: #EB5757;
+        color: #EB5757;
+    }
+    &-transparent{
+        background-color: transparent; 
+        border-color: transparent;
+        color: $primary-color;
+    }
+    &-success{
+        background-color: #00b901; 
+        border-color: #00b901;
+        color: #fff;
+    }
+    &-warning{
+        background-color: #eea236; 
+        border-color: #eea236;
+        color: #fff;
+    }
+    &-info {
+        background-color: #5bc0de;
+        border-color: #46b8da;
+        color: #fff;
+    }
+    &-size-xs{
+        padding: 0.5rem 0.6rem;
+        font-size: 0.75rem;
+        line-height: 120%;
+    }
+    &-size-sm{
+        padding: 0.375rem 0.625rem;
+        font-size: 0.875rem;
+        line-height: 120%;
+    }
+    &-size-md{
+        padding: 0.5rem 0.9375rem;
+        font-size: 0.9375rem;
+        line-height: 1.25rem;
+    }
+    &-size-lg{
+        padding: 0.625rem 1.875rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+}

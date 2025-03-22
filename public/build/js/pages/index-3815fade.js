@@ -1,0 +1,1 @@
+import{_ as n,bf as t,r as e,o as s,g as c}from"../../assets/app-73d10358.js";const r={components:{NotFound:t}};function a(p,_,d,f,u,m){const o=e("NotFound");return s(),c(o)}const l=n(r,[["render",a]]);export{l as default};

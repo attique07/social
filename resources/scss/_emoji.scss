@@ -1,0 +1,14 @@
+.emoji-lists{
+    scrollbar-color: #bbb #f2f2f2;
+    scrollbar-width: thin;
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #f2f2f2; 
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #bbb; 
+        border-radius: 0.5rem;
+    }
+}

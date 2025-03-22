@@ -1,0 +1,1 @@
+function a(t){return window.axios.post("invite/store",t).then(n=>n.data.data)}function r(t){return window.axios.post("invite/store_csv",t).then(n=>n.data.data)}function o(){return window.axios.get("invite/info").then(t=>t.data.data)}function s(t,n,e){return window.axios.get(`invite/get?status=${t}&page=${n}&query=${e}`).then(i=>i.data.data)}export{r as a,s as b,o as g,a as i};

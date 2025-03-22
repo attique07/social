@@ -1,0 +1,45 @@
+{
+    "name": "jdavidbakr/laravel-cache-garbage-collector",
+    "type": "library",
+    "description": "A script that will clean up expired cache files if the system is using the files cache system",
+    "keywords": [
+        "jdavidbakr",
+        "LaravelCacheGarbageCollector"
+    ],
+    "minimum-stability": "dev",
+    "homepage": "https://github.com/jdavidbakr/LaravelCacheGarbageCollector",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jon Baker",
+            "email": "me@jdavidbaker.com",
+            "homepage": "http://www.jdavidbaker.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "8.*|9.*|10.*|^11.0",
+        "php": ">=7.1.0",
+        "mockery/mockery": "^1.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.*|10.*",
+        "squizlabs/php_codesniffer": "~2.3|^3.9",
+        "orchestra/testbench": "6.*|7.*|8.*|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "jdavidbakr\\LaravelCacheGarbageCollector\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "jdavidbakr\\LaravelCacheGarbageCollector\\Test\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
